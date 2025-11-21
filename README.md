@@ -62,4 +62,35 @@ Documentação completa disponível em **Swagger** (`/swagger`).
 ### Via Docker (recomendado)
 ```bash
 docker compose up -d
+```
+---
+
+## 🔗 Acessar a aplicação
+
+Após subir os containers com Docker Compose, os serviços estarão disponíveis nos seguintes endereços:
+
+- **Frontend:** [http://localhost:4200](http://localhost:4200)  
+- **Backend:** [http://localhost:5000](http://localhost:5000)  
+- **Swagger:** [http://localhost:5000/swagger](http://localhost:5000/swagger)  
+
+> ⚠️ **Nota:** Certifique-se de que o Docker esteja em execução antes de acessar os serviços.
+
+---
+
+### 🐳 Docker
+.dockerignore: evita que arquivos desnecessários sejam incluídos na imagem.
+
+.env: centraliza variáveis de ambiente como conexões e portas.
+
+docker-compose.yml: orquestra API, frontend e SQL Server.
+
+Dockerfile: define o build da aplicação .NET 9 e Angular.
+
+
+
+
+
+
+
+
 
