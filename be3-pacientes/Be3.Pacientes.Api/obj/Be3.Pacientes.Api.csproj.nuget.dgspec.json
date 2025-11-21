@@ -1,0 +1,296 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Api\\Be3.Pacientes.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Api\\Be3.Pacientes.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Api\\Be3.Pacientes.Api.csproj",
+        "projectName": "Be3.Pacientes.Api",
+        "projectPath": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Api\\Be3.Pacientes.Api.csproj",
+        "packagesPath": "C:\\Users\\Renan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Application\\Be3.Pacientes.Application.csproj": {
+                "projectPath": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Application\\Be3.Pacientes.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Application\\Be3.Pacientes.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Application\\Be3.Pacientes.Application.csproj",
+        "projectName": "Be3.Pacientes.Application",
+        "projectPath": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Application\\Be3.Pacientes.Application.csproj",
+        "packagesPath": "C:\\Users\\Renan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Domain\\Be3.Pacientes.Domain.csproj": {
+                "projectPath": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Domain\\Be3.Pacientes.Domain.csproj"
+              },
+              "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Infrastructure\\Be3.Pacientes.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Infrastructure\\Be3.Pacientes.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Domain\\Be3.Pacientes.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Domain\\Be3.Pacientes.Domain.csproj",
+        "projectName": "Be3.Pacientes.Domain",
+        "projectPath": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Domain\\Be3.Pacientes.Domain.csproj",
+        "packagesPath": "C:\\Users\\Renan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Infrastructure\\Be3.Pacientes.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Infrastructure\\Be3.Pacientes.Infrastructure.csproj",
+        "projectName": "Be3.Pacientes.Infrastructure",
+        "projectPath": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Infrastructure\\Be3.Pacientes.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Renan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Renan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Domain\\Be3.Pacientes.Domain.csproj": {
+                "projectPath": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Domain\\Be3.Pacientes.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
