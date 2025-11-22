@@ -28,8 +28,10 @@ public class PacienteService
         var cpf = NormalizarCpf(dto.CPF);
         if (!string.IsNullOrEmpty(cpf))
         {
-            if (!CpfValido(cpf)) throw new ArgumentException("CPF inválido.");
-            if (await _pacientes.ExistsCpfAsync(cpf)) throw new ArgumentException("CPF já cadastrado.");
+            if (!CpfValido(cpf))
+                throw new ArgumentException("CPF inválido.");
+            if (await _pacientes.ExistsCpfAsync(cpf))
+                throw new ArgumentException("CPF já cadastrado.");
         }
 
         if (dto.ConvenioId.HasValue && await _convenios.GetByIdAsync(dto.ConvenioId.Value) is null)
@@ -37,10 +39,13 @@ public class PacienteService
 
         var paciente = Mapear(dto);
         paciente.CPF = cpf;
+        paciente.Status = Status.Ativo;
+        paciente.CriadoEm = DateTime.UtcNow;
 
         await _pacientes.AddAsync(paciente);
         return paciente.Id;
     }
+
 
     public async Task AtualizarAsync(int id, PacienteCreateUpdateDto dto)
     {

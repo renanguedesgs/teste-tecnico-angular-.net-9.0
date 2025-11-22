@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Be3.Pacientes.Domain", "Be3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Be3.Pacientes.Infrastructure", "Be3.Pacientes.Infrastructure\Be3.Pacientes.Infrastructure.csproj", "{3F90B1D4-EFC7-4ECC-9D55-E44565174CAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Be3.Pacientes.Tests", "Be3.Pacientes.Tests\Be3.Pacientes.Tests.csproj", "{E95BCB2D-4190-E3CC-4899-250D39A7F36C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,8 +71,23 @@ Global
 		{3F90B1D4-EFC7-4ECC-9D55-E44565174CAC}.Release|x64.Build.0 = Release|Any CPU
 		{3F90B1D4-EFC7-4ECC-9D55-E44565174CAC}.Release|x86.ActiveCfg = Release|Any CPU
 		{3F90B1D4-EFC7-4ECC-9D55-E44565174CAC}.Release|x86.Build.0 = Release|Any CPU
+		{E95BCB2D-4190-E3CC-4899-250D39A7F36C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E95BCB2D-4190-E3CC-4899-250D39A7F36C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E95BCB2D-4190-E3CC-4899-250D39A7F36C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E95BCB2D-4190-E3CC-4899-250D39A7F36C}.Debug|x64.Build.0 = Debug|Any CPU
+		{E95BCB2D-4190-E3CC-4899-250D39A7F36C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E95BCB2D-4190-E3CC-4899-250D39A7F36C}.Debug|x86.Build.0 = Debug|Any CPU
+		{E95BCB2D-4190-E3CC-4899-250D39A7F36C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E95BCB2D-4190-E3CC-4899-250D39A7F36C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E95BCB2D-4190-E3CC-4899-250D39A7F36C}.Release|x64.ActiveCfg = Release|Any CPU
+		{E95BCB2D-4190-E3CC-4899-250D39A7F36C}.Release|x64.Build.0 = Release|Any CPU
+		{E95BCB2D-4190-E3CC-4899-250D39A7F36C}.Release|x86.ActiveCfg = Release|Any CPU
+		{E95BCB2D-4190-E3CC-4899-250D39A7F36C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6AF6BEB9-78B7-487B-BDB9-A526AE8721BD}
 	EndGlobalSection
 EndGlobal

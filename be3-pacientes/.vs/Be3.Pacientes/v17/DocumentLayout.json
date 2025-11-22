@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E95BCB2D-4190-E3CC-4899-250D39A7F36C}|Be3.Pacientes.Tests\\Be3.Pacientes.Tests.csproj|c:\\users\\renan\\desktop\\desafio tecnico angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\be3.pacientes.tests\\services\\convenioservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E95BCB2D-4190-E3CC-4899-250D39A7F36C}|Be3.Pacientes.Tests\\Be3.Pacientes.Tests.csproj|solutionrelative:be3.pacientes.tests\\services\\convenioservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E95BCB2D-4190-E3CC-4899-250D39A7F36C}|Be3.Pacientes.Tests\\Be3.Pacientes.Tests.csproj|c:\\users\\renan\\desktop\\desafio tecnico angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\be3.pacientes.tests\\services\\pacienteservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E95BCB2D-4190-E3CC-4899-250D39A7F36C}|Be3.Pacientes.Tests\\Be3.Pacientes.Tests.csproj|solutionrelative:be3.pacientes.tests\\services\\pacienteservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E95BCB2D-4190-E3CC-4899-250D39A7F36C}|Be3.Pacientes.Tests\\Be3.Pacientes.Tests.csproj|c:\\users\\renan\\desktop\\desafio tecnico angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\be3.pacientes.tests\\be3.pacientes.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E95BCB2D-4190-E3CC-4899-250D39A7F36C}|Be3.Pacientes.Tests\\Be3.Pacientes.Tests.csproj|solutionrelative:be3.pacientes.tests\\be3.pacientes.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{492119FD-456A-4837-8564-E8D2846AB63D}|Be3.Pacientes.Application\\Be3.Pacientes.Application.csproj|c:\\users\\renan\\desktop\\desafio tecnico angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\be3.pacientes.application\\services\\convenioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{492119FD-456A-4837-8564-E8D2846AB63D}|Be3.Pacientes.Application\\Be3.Pacientes.Application.csproj|solutionrelative:be3.pacientes.application\\services\\convenioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +26,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 13,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Be3.Pacientes.Tests",
+              "DocumentMoniker": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Tests\\Be3.Pacientes.Tests.csproj",
+              "RelativeDocumentMoniker": "Be3.Pacientes.Tests\\Be3.Pacientes.Tests.csproj",
+              "ToolTip": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Tests\\Be3.Pacientes.Tests.csproj",
+              "RelativeToolTip": "Be3.Pacientes.Tests\\Be3.Pacientes.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-22T02:39:16.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConvenioService.cs",
+              "DocumentMoniker": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Application\\Services\\ConvenioService.cs",
+              "RelativeDocumentMoniker": "Be3.Pacientes.Application\\Services\\ConvenioService.cs",
+              "ToolTip": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Application\\Services\\ConvenioService.cs",
+              "RelativeToolTip": "Be3.Pacientes.Application\\Services\\ConvenioService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAUwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T02:36:48.075Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -50,6 +93,36 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConvenioServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Tests\\Services\\ConvenioServiceTests.cs",
+              "RelativeDocumentMoniker": "Be3.Pacientes.Tests\\Services\\ConvenioServiceTests.cs",
+              "ToolTip": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Tests\\Services\\ConvenioServiceTests.cs",
+              "RelativeToolTip": "Be3.Pacientes.Tests\\Services\\ConvenioServiceTests.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T02:36:37.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PacienteServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Tests\\Services\\PacienteServiceTests.cs",
+              "RelativeDocumentMoniker": "Be3.Pacientes.Tests\\Services\\PacienteServiceTests.cs",
+              "ToolTip": "C:\\Users\\Renan\\Desktop\\Desafio Tecnico Angular\\teste-tecnico-angular-.net-9.0\\be3-pacientes\\Be3.Pacientes.Tests\\Services\\PacienteServiceTests.cs",
+              "RelativeToolTip": "Be3.Pacientes.Tests\\Services\\PacienteServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T02:36:10.239Z",
+              "EditorCaption": ""
             }
           ]
         }

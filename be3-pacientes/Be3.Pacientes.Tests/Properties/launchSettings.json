@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Be3.Pacientes.Tests": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

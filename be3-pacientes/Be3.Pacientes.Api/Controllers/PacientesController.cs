@@ -1,8 +1,7 @@
 ﻿using Be3.Pacientes.Application.DTOs;
 using Be3.Pacientes.Application.Services;
+using Be3.Pacientes.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
-
-namespace Be3.Pacientes.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -19,18 +18,27 @@ public class PacientesController : ControllerBase
     public async Task<IActionResult> Listar([FromQuery] bool incluirInativos = false)
     {
         var pacientes = await _servico.ListarAsync(incluirInativos);
-
-        var retorno = pacientes.Select(p => new
+        var retorno = pacientes.Select(p => new PacienteDetalhadoDto
         {
-            p.Id,
-            NomeCompleto = $"{p.Nome} {p.Sobrenome}",
-            CPF = p.CPF ?? string.Empty,
+            Id = p.Id,
+            Nome = p.Nome,
+            Sobrenome = p.Sobrenome,
+            DataNascimento = p.DataNascimento,
+            Idade = DateTime.Today.Year - p.DataNascimento.Year,
+            Genero = p.Genero.ToString(),
+            Cpf = p.CPF,
+            Rg = p.RG,
+            UfRg = p.UfRg.ToString(),
             Email = p.Email,
-            Contato = p.Celular ?? p.TelefoneFixo ?? string.Empty,
-            Status = p.Status.ToString(),
-            Convenio = p.Convenio?.Nome
+            Celular = p.Celular,
+            TelefoneFixo = p.TelefoneFixo,
+            Convenio = p.Convenio?.Nome ?? string.Empty,
+            NumeroCarteirinha = p.NumeroCarteirinha,
+            ValidadeCarteirinha = p.ValidadeCarteirinha,
+            Ativo = p.Status == Status.Ativo,
+            DataCadastro = p.CriadoEm,
+            DataAtualizacao = p.AtualizadoEm
         });
-
         return Ok(retorno);
     }
 
@@ -41,7 +49,29 @@ public class PacientesController : ControllerBase
         if (paciente is null)
             return NotFound(new { mensagem = "Paciente não encontrado." });
 
-        return Ok(paciente);
+        var dto = new PacienteDetalhadoDto
+        {
+            Id = paciente.Id,
+            Nome = paciente.Nome,
+            Sobrenome = paciente.Sobrenome,
+            DataNascimento = paciente.DataNascimento,
+            Idade = DateTime.Today.Year - paciente.DataNascimento.Year,
+            Genero = paciente.Genero.ToString(),
+            Cpf = paciente.CPF,
+            Rg = paciente.RG,
+            UfRg = paciente.UfRg.ToString(),
+            Email = paciente.Email,
+            Celular = paciente.Celular,
+            TelefoneFixo = paciente.TelefoneFixo,
+            Convenio = paciente.Convenio?.Nome ?? string.Empty,
+            NumeroCarteirinha = paciente.NumeroCarteirinha,
+            ValidadeCarteirinha = paciente.ValidadeCarteirinha,
+            Ativo = paciente.Status == Status.Ativo,
+            DataCadastro = paciente.CriadoEm,
+            DataAtualizacao = paciente.AtualizadoEm
+        };
+
+        return Ok(dto);
     }
 
     [HttpPost]
@@ -51,6 +81,10 @@ public class PacientesController : ControllerBase
         {
             var id = await _servico.CadastrarAsync(dto);
             return CreatedAtAction(nameof(Obter), new { id }, new { id });
+        }
+        catch (ArgumentException ex) when (ex.Message.Contains("CPF já cadastrado"))
+        {
+            return Conflict(new { mensagem = ex.Message });
         }
         catch (ArgumentException ex)
         {
