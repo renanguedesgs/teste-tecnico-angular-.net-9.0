@@ -1,8 +1,9 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { heroClipboardDocumentList, heroUsers } from '@ng-icons/heroicons/outline';
 import { Convenio } from '../../interfaces/convenio.interface';
+import { ConvenioService } from '../../services/convenio.service';
 
 
 @Component({
@@ -46,13 +47,21 @@ import { Convenio } from '../../interfaces/convenio.interface';
   `,
   styles: ``
 })
-export class ConveniosComponent {
-  convenios = signal<Convenio[]>([
-    { id: 1, nome: 'Unimed', totalPacientes: 95, ativo: true },
-    { id: 2, nome: 'Bradesco Saúde', totalPacientes: 62, ativo: true },
-    { id: 3, nome: 'SulAmérica', totalPacientes: 48, ativo: true },
-    { id: 4, nome: 'Amil', totalPacientes: 30, ativo: true },
-    { id: 5, nome: 'NotreDame Intermédica', totalPacientes: 12, ativo: true },
-    { id: 6, nome: 'Prevent Senior', totalPacientes: 0, ativo: true }
-  ]);
+export class ConveniosComponent implements OnInit{
+  private convenioService = inject(ConvenioService);
+  convenios = signal<Convenio[]>([]);
+
+  ngOnInit(): void {
+    this.loadConvenios();
+  }
+  loadConvenios(): void {
+    this.convenioService.findAll().subscribe({
+      next: (data) => {
+        this.convenios.set(data);
+      },
+      error: (error) => {
+        console.error('Erro ao carregar convênios:', error);
+      }
+    }); 
+  }
 }

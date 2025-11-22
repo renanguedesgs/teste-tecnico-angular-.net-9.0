@@ -6,6 +6,7 @@ import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { heroArrowLeft, heroCheck, heroXMark } from '@ng-icons/heroicons/outline';
 import { NgxMaskDirective, provideNgxMask } from 'ngx-mask';
 import { PacienteService } from '../../../services/paciente.service';
+import { ConvenioService } from '../../../services/convenio.service';
 
 interface Convenio {
   id: number;
@@ -352,7 +353,8 @@ interface Convenio {
   styles: ``
 })
 export class PacienteFormComponent implements OnInit {
-    pacienteService= inject(PacienteService);
+  private convenioService = inject(ConvenioService);
+  pacienteService= inject(PacienteService);
   form!: FormGroup;
   isEditMode = signal(false);
   isSubmitting = signal(false);
@@ -365,14 +367,7 @@ export class PacienteFormComponent implements OnInit {
     'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO'
   ]);
 
-  convenios = signal<Convenio[]>([
-    { id: 1, nome: 'Unimed' },
-    { id: 2, nome: 'Bradesco Saúde' },
-    { id: 3, nome: 'SulAmérica' },
-    { id: 4, nome: 'Amil' },
-    { id: 5, nome: 'NotreDame Intermédica' },
-    { id: 6, nome: 'Prevent Senior' }
-  ]);
+  convenios = signal<Convenio[]>([]);
 
   maxDate = computed(() => {
     const today = new Date();
@@ -394,6 +389,17 @@ export class PacienteFormComponent implements OnInit {
       this.pacienteId.set(+id);
       this.loadPaciente(+id);
     }
+    this.loadConvenios();
+  }
+    loadConvenios(): void {
+    this.convenioService.findAll().subscribe({
+      next: (data) => {
+        this.convenios.set(data);
+      },
+      error: (error) => {
+        console.error('Erro ao carregar convênios:', error);
+      }
+    }); 
   }
 
   initForm() {
@@ -406,8 +412,8 @@ export class PacienteFormComponent implements OnInit {
       rg: ['', Validators.required],
       ufRg: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      celular: ['', [Validators.required, Validators.minLength(15)]],
-      telefoneFixo: [''],
+      celular: ['', [Validators.required, Validators.minLength(11)]],
+      telefoneFixo: [Validators.required, Validators.minLength(10)],
       convenioId: ['', Validators.required],
       numeroCarteirinha: ['', Validators.required],
       validadeCarteirinha: ['', Validators.required]
@@ -497,12 +503,19 @@ export class PacienteFormComponent implements OnInit {
     }
 
     this.isSubmitting.set(true);
+    console.log('Formulário enviado:', this.form.value);
 
-    setTimeout(() => {
-      console.log('Dados do formulário:', this.form.value);
-      this.isSubmitting.set(false);
-      this.router.navigate(['/pacientes']);
-    }, 1500);
+    this.pacienteService.create(this.form.value).subscribe({
+      next: () => {
+        this.isSubmitting.set(false) ;
+        this.router.navigate(['/pacientes']);
+      },
+      error: () => {
+        this.isSubmitting.set(false);
+        alert('Erro ao salvar o paciente. Tente novamente.');
+      }
+    });
+    
   }
 
   goBack() {

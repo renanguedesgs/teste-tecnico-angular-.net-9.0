@@ -16,20 +16,23 @@ builder.Services.AddScoped<PacienteService>();
 builder.Services.AddScoped<ConvenioService>();
 
 builder.Services.AddControllers()
-  .AddJsonOptions(o => o.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()));
+    .AddJsonOptions(o => o.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()));
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Configuração de CORS
 builder.Services.AddCors(opt =>
 {
     opt.AddPolicy("frontend", p => p
-        .WithOrigins("http://localhost:4200")
+        .WithOrigins("http://localhost:4200", "http://127.0.0.1:4200", "http://localhost:4200/api")
         .AllowAnyHeader()
-        .AllowAnyMethod());
+        .AllowAnyMethod()
+        .AllowCredentials());
 });
 
 var app = builder.Build();
 
+// Executa migrations automaticamente
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<PacientesDbContext>();
@@ -38,6 +41,10 @@ using (var scope = app.Services.CreateScope())
 
 app.UseSwagger();
 app.UseSwaggerUI();
+
+// CORS deve vir antes dos controllers
 app.UseCors("frontend");
+
+app.UseAuthorization();
 app.MapControllers();
 app.Run();

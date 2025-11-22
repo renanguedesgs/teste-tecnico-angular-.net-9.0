@@ -4,7 +4,7 @@ using Be3.Pacientes.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/pacientes")]
 public class PacientesController : ControllerBase
 {
     private readonly PacienteService _servico;
@@ -77,6 +77,7 @@ public class PacientesController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Cadastrar([FromBody] PacienteCreateUpdateDto dto)
     {
+        Console.WriteLine("Chamada metodo Cadastrar..");
         try
         {
             var id = await _servico.CadastrarAsync(dto);
